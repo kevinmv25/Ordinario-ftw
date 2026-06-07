@@ -10,7 +10,9 @@ body {
     color: #111;
 }
 
+/* ========================= */
 /* ENCABEZADO */
+/* ========================= */
 
 .encabezado {
     width: 100%;
@@ -47,7 +49,9 @@ body {
     object-fit: contain;
 }
 
+/* ========================= */
 /* BANNER PRINCIPAL */
+/* ========================= */
 
 .banner-principal h1 {
     display: none;
@@ -60,7 +64,9 @@ body {
     display: block;
 }
 
+/* ========================= */
 /* PROMOCIONES */
+/* ========================= */
 
 .promociones {
     padding: 35px 10px 60px 10px;
@@ -85,7 +91,9 @@ body {
     border: 1px solid #ddd;
 }
 
+/* ========================= */
 /* FOOTER */
+/* ========================= */
 
 footer {
     padding: 25px;
@@ -94,9 +102,80 @@ footer {
     margin-top: 30px;
 }
 
-/* RESPONSIVE SENCILLO */
+/* ========================= */
+/* LOGIN */
+/* ========================= */
+
+.titulo-login {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.titulo-login h1 {
+    font-size: 42px;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.contenedor-login {
+    width: 700px;
+    max-width: 90%;
+    margin: 50px auto;
+}
+
+.contenedor-login h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contenedor-login p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+#formLogin {
+    width: 100%;
+}
+
+#formLogin label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 17px;
+}
+
+#formLogin input {
+    display: block;
+    width: 100%;
+    height: 55px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#formLogin button {
+    margin-top: 25px;
+    background-color: #20242a;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#mensajeLogin {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
 
 @media (max-width: 800px) {
+
     .encabezado {
         height: auto;
         padding: 20px;
@@ -120,4 +199,9 @@ footer {
         width: 48%;
         margin-bottom: 15px;
     }
+
+    .contenedor-login {
+        width: 90%;
+    }
+
 }
