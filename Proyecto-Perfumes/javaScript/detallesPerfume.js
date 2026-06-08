@@ -51,7 +51,7 @@ function mostrarDetalle(nombre, marca, precio, familia, disponible, imagen, desc
             <p><strong>Disponibilidad:</strong> ${disponible}</p>
 
             <div class="botones-detalle">
-                <a href="detallesCompra.html?id=${obtenerIdActual()}">Comprar</a>
+                <button onclick="agregarCompra()">Comprar</button>
                 <button onclick="agregarFavorito()">Agregar a favoritos</button>
             </div>
         </article>
@@ -64,5 +64,41 @@ function obtenerIdActual() {
 }
 
 function agregarFavorito() {
-    alert("Perfume agregado a favoritos");
+    let idPerfume = obtenerIdActual();
+
+    let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+    if (favoritos.includes(idPerfume)) {
+        alert("Este perfume ya está en favoritos");
+    } else {
+        favoritos.push(idPerfume);
+        localStorage.setItem("favoritos", JSON.stringify(favoritos));
+        alert("Perfume agregado a favoritos");
+    }
+}
+
+function agregarCompra() {
+    let idPerfume = obtenerIdActual();
+
+    let compra = JSON.parse(localStorage.getItem("compra")) || [];
+
+    let encontrado = false;
+
+    for (let i = 0; i < compra.length; i++) {
+        if (compra[i].id === idPerfume) {
+            compra[i].cantidad = compra[i].cantidad + 1;
+            encontrado = true;
+        }
+    }
+
+    if (encontrado === false) {
+        compra.push({
+            id: idPerfume,
+            cantidad: 1
+        });
+    }
+
+    localStorage.setItem("compra", JSON.stringify(compra));
+
+    window.location.href = "detallesCompra.html";
 }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalles de compra</title>
+
+    <link rel="stylesheet" href="css/estiloPaginas.css">
+    <link rel="stylesheet" href="css/detallesCompra.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <nav class="menu-principal" aria-label="Menú principal">
+            <ul>
+                <li><a href="catalogo.html">Fragancias</a></li>
+                <li><a href="#">Skincare</a></li>
+                <li><a href="#">Makeup</a></li>
+                <li><a href="#">Luxury</a></li>
+                <li><a href="#">Tester</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <a href="principal.html">
+                <img src="img/logotransparente.png" alt="Logo de la tienda">
+            </a>
+        </div>
+
+        <nav class="menu-iconos" aria-label="Accesos rápidos">
+            <ul>
+                <li><a href="login.html"><img src="img/user.png" alt="Iniciar sesión"></a></li>
+                <li><a href="perfumesFavoritos.html"><img src="img/favorito.png" alt="Ver favoritos"></a></li>
+                <li><a href="catalogo.html"><img src="img/lupa.png" alt="Buscar perfumes"></a></li>
+                <li><a href="detallesCompra.html"><img src="img/carrito.png" alt="Ver compra"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="titulo-compra">
+            <h1>Detalles de compra</h1>
+        </section>
+
+        <section class="ruta-compra">
+            <a href="principal.html">Inicio</a>
+            <span> &gt; </span>
+            <a href="catalogo.html">Catálogo</a>
+            <span> &gt; Compra</span>
+        </section>
+
+        <section class="contenedor-compra">
+
+            <section class="lista-compra">
+                <h2>Perfumes seleccionados</h2>
+
+                <div id="listaCompra">
+                    <!-- Aquí se cargan los perfumes -->
+                </div>
+            </section>
+
+            <aside class="resumen-compra">
+                <h2>Resumen</h2>
+
+                <p>Subtotal: <span id="subtotalGeneral">$0</span></p>
+                <p class="total">Total: <span id="totalGeneral">$0</span></p>
+
+                <button id="btnComprar" type="button">
+                    Confirmar compra
+                </button>
+
+                <p id="mensajeCompra"></p>
+            </aside>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto escolar de Fundamentos de Tecnologías Web.</p>
+    </footer>
+
+    <script src="javaScript/detallesCompra.js"></script>
+</body>
+</html>
