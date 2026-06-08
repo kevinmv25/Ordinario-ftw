@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<usuarios>
+    <usuario>
+        <correo>admin@gmail.com</correo>
+        <password>12345</password>
+        <nombre>Administrador</nombre>
+    </usuario>
+
+    <usuario>
+        <correo>usuario@gmail.com</correo>
+        <password>12345</password>
+        <nombre>Usuario de prueba</nombre>
+    </usuario>
+</usuarios>

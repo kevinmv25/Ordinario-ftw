@@ -3,63 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Inicio de sesión</title>
+
     <link rel="stylesheet" href="css/estiloPaginas.css">
+    <link rel="stylesheet" href="css/crearCuenta.css">
 </head>
 <body>
 
-    <header class="encabezado">
+<header class="encabezado">
+    <nav class="menu-principal" aria-label="Menú principal">
+        <ul>
+            <li><a href="catalogo.html">Fragancias</a></li>
+            
+        </ul>
+    </nav>
 
-        <nav class="menu-principal" aria-label="Menú principal">
-            <ul>
-                <li><a href="catalogo.html">Fragancias</a></li>
+    <div class="logo">
+        <a href="principal.html">
+            <img src="img/logotransparente.png" alt="Logo de la tienda">
+        </a>
+    </div>
 
-            </ul>
-        </nav>
+    <nav class="menu-iconos" aria-label="Accesos rápidos">
+        <ul>
+            <li><a href="login.html"><img src="img/user.png" alt="Iniciar sesión"></a></li>
+            <li><a href="perfumesFavoritos.html"><img src="img/favorito.png" alt="Ver favoritos"></a></li>
+            <li><a href="catalogo.html"><img src="img/lupa.png" alt="Buscar perfumes"></a></li>
+            <li><a href="detallesCompra.html"><img src="img/carrito.png" alt="Ver compra"></a></li>
+        </ul>
+    </nav>
+</header>
 
-        <div class="logo">
-            <a href="principal.html">
-                <img src="img/logotransparente.png" alt="Logo de la tienda">
-            </a>
-        </div>
+<main>
 
-        <nav class="menu-iconos" aria-label="Accesos rápidos">
-            <ul>
-                <li><a href="login.html"><img src="img/user.png" alt="Iniciar sesión"></a></li>
-                <li><a href="perfumesFavoritos.html"><img src="img/favorito.png" alt="Ver favoritos"></a></li>
-                <li><a href="catalogo.html"><img src="img/lupa.png" alt="Buscar perfumes"></a></li>
-                <li><a href="detallesCompra.html"><img src="img/carrito.png" alt="Ver compra"></a></li>
-            </ul>
-        </nav>
-        
-    </header>
+    <section class="titulo-cuenta">
+        <h1>Inicio de sesión</h1>
+    </section>
 
-    <main>
-        <section class="titulo-login">
-            <h1>Inicio de sesión</h1>
-        </section>
+    <section class="contenedor-cuenta">
+        <h2>Clientes registrados</h2>
+        <p>Si tiene una cuenta, inicie sesión con su correo electrónico.</p>
 
-        <section class="contenedor-login">
-            <h2>Clientes registrados</h2>
-            <p>Si tiene una cuenta, inicie sesión con su dirección de correo electrónico.</p>
+        <form id="formLogin">
 
-            <form id="formLogin">
-                <label for="correo">Correo electrónico *</label>
-                <input type="email" id="correo" name="correo">
+            <label for="correo">Correo electrónico *</label>
+            <input type="email" id="correo">
 
-                <label for="password">Contraseña *</label>
-                <input type="password" id="password" name="password">
+            <label for="password">Contraseña *</label>
+            <input type="password" id="password">
 
-                <button type="submit">Iniciar sesión</button>
-            </form>
+            <button type="submit">Iniciar sesión</button>
+        </form>
 
-            <p id="mensajeLogin"></p>
-        </section>
-    </main>
+        <p id="mensajeLogin"></p>
 
-    <footer>
-        <p>Proyecto escolar de Fundamentos de Tecnologías Web.</p>
-    </footer>
+        <p>
+            ¿No tienes cuenta?
+            <a href="crearCuenta.html">Crear cuenta</a>
+        </p>
+    </section>
 
-    <script src="javaScript/login.js"></script>
+</main>
+
+<footer>
+    <p>Proyecto escolar de Fundamentos de Tecnologías Web.</p>
+</footer>
+
+<script src="javaScript/login.js"></script>
 </body>
 </html>
