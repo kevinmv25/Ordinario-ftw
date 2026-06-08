@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<perfumes>
+
+    <perfume>
+        <id>1</id>
+        <nombre>Afnan 9PM</nombre>
+        <marca>Afnan</marca>
+        <precio>850</precio>
+        <familia>Oriental Vainilla</familia>
+        <disponible>Si</disponible>
+        <imagen>img/perfumesPNG/9pm.png</imagen>
+        <descripcion>Fragancia dulce con notas de vainilla, manzana y canela.</descripcion>
+    </perfume>
+
+    <perfume>
+        <id>2</id>
+        <nombre>Invictus EDT</nombre>
+        <marca>Paco Rabanne</marca>
+        <precio>1450</precio>
+        <familia>Aromatica Acuatica</familia>
+        <disponible>Si</disponible>
+        <imagen>img/perfumesPNG/invictusEDT.png</imagen>
+        <descripcion>Fragancia fresca con notas marinas, toronja y ámbar gris.</descripcion>
+    </perfume>
+
+    <perfume>
+        <id>3</id>
+        <nombre>Layton</nombre>
+        <marca>Parfums de Marly</marca>
+        <precio>4200</precio>
+        <familia>Amaderada Especiada</familia>
+        <disponible>Si</disponible>
+        <imagen>img/perfumesPNG/layton.png</imagen>
+        <descripcion>Fragancia elegante con manzana, vainilla, cardamomo y sándalo.</descripcion>
+    </perfume>
+
+    <perfume>
+        <id>4</id>
+        <nombre>Versace Eros EDP</nombre>
+        <marca>Versace</marca>
+        <precio>1150</precio>
+        <familia>Aromatica Fougere</familia>
+        <disponible>Si</disponible>
+        <imagen>img/perfumesPNG/VersaceEros-EDP.png</imagen>
+        <descripcion>Fragancia intensa con vainilla, menta, limón y cedro.</descripcion>
+    </perfume>
+
+    <perfume>
+        <id>5</id>
+        <nombre>Versace Pour Homme EDT</nombre>
+        <marca>Versace</marca>
+        <precio>950</precio>
+        <familia>Aromatica Fougere</familia>
+        <disponible>Si</disponible>
+        <imagen>img/perfumesPNG/VersacePourHomme-EDT.png</imagen>
+        <descripcion>Fragancia fresca con limón, bergamota, neroli y almizcle.</descripcion>
+    </perfume>
+
+    <perfume>
+        <id>6</id>
+        <nombre>212 VIP Black</nombre>
+        <marca>Carolina Herrera</marca>
+        <precio>1350</precio>
+        <familia>Aromatica Oriental</familia>
+        <disponible>Si</disponible>
+        <imagen>img/perfumesPNG/VipBlack.png</imagen>
+        <descripcion>Fragancia nocturna con absenta, lavanda y vainilla.</descripcion>
+    </perfume>
+
+</perfumes>

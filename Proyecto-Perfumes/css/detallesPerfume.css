@@ -1,0 +1,81 @@
+.ruta-detalle {
+    padding: 40px 70px;
+    background-color: #f5f5f5;
+}
+
+.ruta-detalle h1 {
+    font-size: 36px;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+.detalle-perfume {
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.imagen-detalle {
+    width: 45%;
+    text-align: center;
+}
+
+.imagen-detalle img {
+    width: 100%;
+    max-width: 430px;
+}
+
+.info-detalle {
+    width: 55%;
+}
+
+.info-detalle h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.info-detalle .marca {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.info-detalle .precio {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info-detalle p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.botones-detalle {
+    margin-top: 25px;
+}
+
+.botones-detalle a,
+.botones-detalle button {
+    display: inline-block;
+    padding: 13px 25px;
+    margin-right: 10px;
+    background-color: #20242a;
+    color: white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .detalle-perfume {
+        display: block;
+    }
+
+    .imagen-detalle,
+    .info-detalle {
+        width: 100%;
+    }
+}

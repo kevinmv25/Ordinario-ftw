@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo</title>
+
+    <link rel="stylesheet" href="css/estiloPaginas.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="catalogo.html">Fragancias</a></li>
+                <li><a href="#">Skincare</a></li>
+                <li><a href="#">Makeup</a></li>
+                <li><a href="#">Luxury</a></li>
+                <li><a href="#">Tester</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <a href="principal.html">
+                <img src="img/logotransparente.png" alt="Logo">
+            </a>
+        </div>
+
+        <nav class="menu-iconos">
+            <ul>
+                <li><a href="login.html"><img src="img/user.png" alt="Usuario"></a></li>
+                <li><a href="perfumesFavoritos.html"><img src="img/favorito.png" alt="Favoritos"></a></li>
+                <li><a href="catalogo.html"><img src="img/lupa.png" alt="Buscar"></a></li>
+                <li><a href="detallesCompra.html"><img src="img/carrito.png" alt="Compra"></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="titulo-catalogo">
+            <h1>Catálogo de Perfumes</h1>
+        </section>
+
+        <section class="contenedor-catalogo">
+
+            <aside class="filtros">
+
+                <h2>Filtros</h2>
+
+                <label for="marca">Marca</label>
+
+                <select id="marca">
+                    <option value="">Todas</option>
+                    <option value="Versace">Versace</option>
+                    <option value="Afnan">Afnan</option>
+                    <option value="Paco Rabanne">Paco Rabanne</option>
+                    <option value="Carolina Herrera">Carolina Herrera</option>
+                </select>
+
+                <label for="precio">
+                    Precio máximo
+                </label>
+
+                <input type="range"
+                       id="precio"
+                       min="0"
+                       max="5000"
+                       value="5000">
+
+                <p id="valorPrecio">
+                    $5000
+                </p>
+
+                <button id="btnFiltrar">
+                    Filtrar
+                </button>
+
+            </aside>
+
+            <section id="contenedorPerfumes" class="productos">
+
+                <!-- AQUÍ JAVASCRIPT INSERTARÁ LAS CARDS -->
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto escolar de Fundamentos de Tecnologías Web.</p>
+    </footer>
+
+    <script src="javaScript/catalogo.js"></script>
+
+</body>
+
+</html>

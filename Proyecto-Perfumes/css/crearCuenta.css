@@ -1,0 +1,69 @@
+.titulo-cuenta{
+    background-color:#f5f5f5;
+    text-align:center;
+    padding:70px;
+}
+
+.titulo-cuenta h1{
+    font-size:42px;
+    font-family:Georgia, serif;
+}
+
+.contenedor-cuenta{
+    width:700px;
+    margin:50px auto;
+}
+
+.contenedor-cuenta h2{
+    margin-bottom:25px;
+}
+
+.contenedor-cuenta label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+.contenedor-cuenta input[type="text"],
+.contenedor-cuenta input[type="email"],
+.contenedor-cuenta input[type="tel"],
+.contenedor-cuenta input[type="password"]{
+    width:100%;
+    height:50px;
+    padding:10px;
+    border:1px solid #ccc;
+}
+
+.grupo-radio{
+    margin-top:10px;
+}
+
+.grupo-radio label{
+    display:inline;
+    margin-right:20px;
+}
+
+.terminos{
+    margin-top:20px;
+}
+
+.contenedor-cuenta button{
+    margin-top:25px;
+    padding:15px 30px;
+    border:none;
+    background-color:#1f242b;
+    color:white;
+    cursor:pointer;
+}
+
+.contenedor-cuenta p{
+    margin-top:20px;
+}
+
+@media(max-width:800px){
+
+    .contenedor-cuenta{
+        width:90%;
+    }
+
+}

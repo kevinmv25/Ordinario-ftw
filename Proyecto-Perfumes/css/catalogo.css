@@ -1,0 +1,77 @@
+.ruta{
+    padding:40px 60px;
+}
+
+.ruta h1{
+    font-size:35px;
+}
+
+.contenedor-catalogo{
+    display:flex;
+    gap:40px;
+    padding:20px 60px 60px;
+}
+
+.filtros{
+    width:250px;
+}
+
+.filtros h2{
+    margin-bottom:20px;
+}
+
+.filtros label{
+    display:block;
+    margin-top:20px;
+}
+
+.filtros select,
+.filtros input{
+    width:100%;
+    margin-top:8px;
+}
+
+.filtros button{
+    margin-top:20px;
+    padding:10px;
+    width:100%;
+}
+
+.productos{
+    flex:1;
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    width:220px;
+    border:1px solid #ddd;
+    padding:15px;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin-top:15px;
+    font-size:18px;
+}
+
+.card p{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    background:black;
+    color:white;
+    padding:10px 15px;
+}
